@@ -2,25 +2,56 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Luc Tourangeau" />
 		<title>Luc Tourangeau's Portfolio</title>
-		<meta name="description" content="A webpage to showcase my programming prowess"
-		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<meta name="description" content="A webpage to showcase my programming prowess" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 	</head>
 	<body>
 		<header>
 			<h1>
-				Luc Tourangeau's Programming
-				<span class="styled_h1">Portfolio</span>
+				Luc Tourangeau's
+				<span class="styled_h1">Programming</span>
+				Portfolio
 			</h1>
-			<nav>
-				<a href="#project-1">Project 1</a>
-				<a href="#project-2">Project 2</a>
-				<a href="#project-3">Project 3</a>
+			
+			<nav role="navigation">
+				<ul>
+					<li>
+						<a href="#project-1">Project 1</a>
+					</li>
+					<li>
+						<a href="#project-2">Project 2</a>
+					</li>
+					<li>
+						<a href="#project-3">Project 3</a>
+					</li>
+				</ul>
 			</nav>
-			<img src="./assets/images/profile-pic.jpg" alt="A photo of Luc holding a shovel in a backyard">
 		</header>
 		<main>
+			<article>
+				<div id="about-me">
+					<img src="./assets/images/profile-pic.jpg" alt="A photo of Luc holding a shovel in a backyard">
+					<h2>About Me</h2>
+				</div>
+			</article>
+			<aside>
+				<h3>Recent Activity</h3>
+				<a href="https://github.com/TurtleNav"></a>
+			</aside>
+
+			<section>
+				<p>Programming Languages Experience</p>
+				<img class="lang-icon" src="./assets/images/js.png">
+				<img class="lang-icon" src="./assets/images/go.svg">
+				<img class="lang-icon" id="python-icon" src="./assets/images/python.svg">
+				<img class="lang-icon" src="./assets/images/html.svg">
+				<img class="lang-icon" id="css-icon" src="./assets/images/css.png">
+				<img class="lang-icon" src="./assets/images/c.svg">
+			</section>
+		
 			<!-- Place actual content here -->
 			<section>
 			<div id="project-1">

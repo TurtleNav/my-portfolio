@@ -1,0 +1,96 @@
+
+/* Style my main header */
+h1 {
+	text-align: center;
+}
+
+.styled_h1 {
+	color: red;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li {
+	min-width: 100px;
+	flex: 1, 1, 100px;
+	/* margin-left: 25px;
+	margin-right: 25px;
+	*/
+}
+
+a:link {
+	color: hotpink;
+	text-decoration: none;
+}
+
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Style profile pic */
+/* original dimensions: 3024x4032
+ * Divisible by 2 -> 1512x2016
+ * Divisible by 3 -> 1008x1344
+ * Divisible by 4 ->  756x1008
+ * Divisible by 6 ->  504x672
+ * Divisible by 7 ->  432x576
+ * Divisible by 8 ->  378x504
+ * Divisible by 9 ->  336x448
+ * Divisible by 12 -> 252x336
+ * 3, 4, 6, 7, 8, 9, 12, 14
+*/
+main img {
+	/* Smallest display size and increased with larger monitors */
+	width: 252px;
+	height: 336px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.lang-icon {
+	width: 100px;
+	height: 100px;
+}
+#python-icon {
+	width: 111px;
+	height: 135px;
+}
+#css-icon {
+	width: 100px;
+	height: 141px;
+}
+footer {
+	margin: 0px;
+	padding: 0px;
+	background-color: #edf6ff;
+
+}
+  
+@media only screen and (min-width: 375px) {
+	main img {
+		width: 336px;
+		height: 448px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	main img {
+		width: 504px;
+		height: 672px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	main img {
+		width: 756px;
+		height: 1008px;
+	}
+}
+
+
+
+
