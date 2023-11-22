@@ -1,7 +1,46 @@
+/*
+ Monolithic stylesheet. Rules follow the general order in which elements
+ are found in index.html with the exception of media queries which are
+ found at the bottom of this stylesheet.
+ */
+
+/* Universal rules */
 * {
+	background-color: palegoldenrod;
 	font-family: Arial, Verdana, sans-serif;
 }
 
+h1, h2, h3 {
+	color: darkgreen;
+	font-size: 36px;
+	text-align: center;
+}
+
+
+/* header element contains:
+ 	- Main project header (h1)
+	- Nav bar with links
+*/
+/* --------------------- <header> ---------------------- */
+nav {
+	top: 50px;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+nav ul li {
+	display: inline;
+	position: relative;
+	min-width: 100px;
+}
+/* ---------------------- </header> --------------------------- */
+
+/* All article elements are displayed using flexbox. Using the principles
+ * of mobile-first-design, the elements start of with wrapping set to 'wrap'.
+ * As the screen width increases, wrapping is turned off and the article 
+ * elements will adopt a columnar layout
+ */
 article {
 	margin-left: 20px;
 	margin-right: 20px;
@@ -25,13 +64,6 @@ article {
 #js-icon {
 	height: 100px;
 }
-
-/*
-.lang-icon {
-	width: 100px;
-	height: 100px;
-}
-*/
 #python-icon {
 	width: 111px;
 	height: 135px;
@@ -44,31 +76,13 @@ article {
 
 /* Color Scheme */
 p {
-	color: darkcyan;
+	color:green;
 	font-size: 16pt;
 }
 
-h1, h2, h3 {
-	color: darkviolet;
-	text-align: center;
-}
 
-.styled_h1 {
-	color: deeppink;
-}
-nav {
-	top: 50px;
-}
-nav ul {
-	display: flex;
-	flex-direction: row;
-}
 
-nav ul li {
-	display: inline;
-	position: relative;
-	min-width: 100px;
-}
+
 
 a:link {
 	color: hotpink;
