@@ -4,17 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Luc Tourangeau" />
-		<title>Luc Tourangeau's Portfolio</title>
+		<title>My Programming Portfolio</title>
 		<meta name="description" content="A webpage to showcase my programming prowess" />
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 	</head>
 	<body>
 		<header>
-			<h1>
-				Luc Tourangeau's
-				<span class="styled_h1">Programming</span>
-				Portfolio
-			</h1>
+			<h1>My Programming Portfolio</h1>
 			
 			<nav role="navigation">
 				<ul>
@@ -31,10 +27,17 @@
 			</nav>
 		</header>
 		<main>
-			<article>
-				<div id="about-me">
-					<img src="./assets/images/profile-pic.jpg" alt="A photo of Luc holding a shovel in a backyard">
+			<article id="about-me">
+				<img src="./assets/images/profile-pic.jpg" alt="A photo of myself, holding a shovel, in a backyard">
+				<div id="about-me-content">
 					<h2>About Me</h2>
+					<p>
+						Hi! My name is Luc Tourangeau. I am an aspiring software developer and kind of a
+						jack-of-all-trades. I earned my B.S. in Physics from Penn State in 2019. Immediately
+						after graduation, I worked as a research-assistant / programmer in a
+						<a href="https://taylorlab.web.unc.edu/">quantitative biology lab</a> at UNC Chapel
+						Hill until the Summer of 2022.
+					</p>
 				</div>
 			</article>
 			<aside>
@@ -51,31 +54,28 @@
 				<img class="lang-icon" id="css-icon" src="./assets/images/css.png">
 				<img class="lang-icon" src="./assets/images/c.svg">
 			</section>
-		
-			<!-- Place actual content here -->
-			<section>
-			<div id="project-1">
-				<h2>Project 1 can be found here</h2>
-				<!-- Don't forget image here -->
-				<p>lorem ipsum</p>
-			</div>
-			</section>
 
-			<section>
-			<div id="project-2">
-				<h2>Project 2 can be found here</h2>
-				<!-- Don't forget image here -->
-				<p>lorem ipsum</p>
-			</div>
-			</section>
+			<article id="project-1" class="project-class">
+				<h3>Project 1</h3>
+				<!-- src="https://turtlenav.github.io/seo-company-refactor/" -->
+				<video src="./assets/images/project-1.webm"
+					width="1440" height="810"
+					autoplay
+					loop>
+					<p>First website built</p>
+				</video>
 
-			<section>
-			<div id="project-3">
-				<h2>Project 3 can be found here</h2>
+			</article>
+			<article id="project-2" class="project-class">
+				<h3>Project 2</h3>
 				<!-- Don't forget image here -->
 				<p>lorem ipsum</p>
-			</div>
-			</section>
+			</article>
+			<article id="project-3" class="project-class">
+				<h3>Project 3</h3>
+				<!-- Don't forget image here -->
+				<p>lorem ipsum</p>
+			</article>
 		</main>
 		<footer>
 			<h3>Contact Me:</h3>

@@ -1,29 +1,47 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+}
 
-/* Style my main header */
-h1 {
+article {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+}
+
+/* Color Scheme */
+p {
+	color: darkcyan;
+}
+
+h1, h2, h3 {
+	color: darkviolet;
 	text-align: center;
 }
 
 .styled_h1 {
-	color: red;
+	color: deeppink;
 }
-
+nav {
+	top: 50px;
+}
 nav ul {
 	display: flex;
 	flex-direction: row;
 }
 
 nav ul li {
+	display: inline;
+	position: relative;
 	min-width: 100px;
-	flex: 1, 1, 100px;
-	/* margin-left: 25px;
-	margin-right: 25px;
-	*/
 }
 
 a:link {
 	color: hotpink;
 	text-decoration: none;
+}
+
+a:visited {
+	color: hotpink;
 }
 
 body {
@@ -69,8 +87,30 @@ footer {
 	background-color: #edf6ff;
 
 }
-  
+
+/* Stylize the project elements */
+.project-class h3 {
+	text-align: center;
+	font-size: 36px;
+}
+
+/* If very small screen:
+
+* Size image - 336 x 448
+* Wrap article text so it appears underneath
+  corresponding images
+* Place nav bar links in a centered 
+*/
 @media only screen and (min-width: 375px) {
+	article {
+		flex-wrap: wrap;
+	}
+	nav {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	main img {
 		width: 336px;
 		height: 448px;
@@ -78,13 +118,25 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+	article {
+		flex-wrap: nowrap;
+	}
 	main img {
 		width: 504px;
 		height: 672px;
 	}
+	nav {
+		position: absolute;
+		display: inline-block;
+		right: 0;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
+	article p {
+		float: right;
+	}
+
 	main img {
 		width: 756px;
 		height: 1008px;
