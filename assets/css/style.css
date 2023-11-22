@@ -8,9 +8,44 @@ article {
 	display: flex;
 }
 
+#langs {
+	display: flex;
+	margin: 0px;
+	padding: 5px;
+}
+#langs img {
+	flex-wrap: wrap;
+	flex: 0, 1, 100px;
+	max-width: 100px;
+	max-height: 150px;
+	aspect-ratio: 1 / 1;
+}
+
+/* Override strange aspect ratio of js logo */
+#js-icon {
+	height: 100px;
+}
+
+/*
+.lang-icon {
+	width: 100px;
+	height: 100px;
+}
+*/
+#python-icon {
+	width: 111px;
+	height: 135px;
+}
+#css-icon {
+	width: 100px;
+	height: 141px;
+}
+
+
 /* Color Scheme */
 p {
 	color: darkcyan;
+	font-size: 16pt;
 }
 
 h1, h2, h3 {
@@ -69,18 +104,6 @@ main img {
 	margin-right: 50px;
 }
 
-.lang-icon {
-	width: 100px;
-	height: 100px;
-}
-#python-icon {
-	width: 111px;
-	height: 135px;
-}
-#css-icon {
-	width: 100px;
-	height: 141px;
-}
 footer {
 	margin: 0px;
 	padding: 0px;
@@ -93,6 +116,12 @@ footer {
 	text-align: center;
 	font-size: 36px;
 }
+
+video {
+	width: 240px;
+	height: 135px;
+}
+
 
 /* If very small screen:
 
@@ -129,6 +158,10 @@ footer {
 		position: absolute;
 		display: inline-block;
 		right: 0;
+	}
+	video {
+		width: 480px;
+		height: 270px;
 	}
 }
 
